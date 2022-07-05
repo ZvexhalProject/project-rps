@@ -1,0 +1,125 @@
+:root {
+    --primary-light: rgb(222, 222, 222);
+    --primary-dark: #222830;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #fcfcfc;
+    --secondary-dark-active: #ffffff;
+    --header: #111720;
+}
+
+body{
+    margin:0;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', Geneva, Tahoma, sans-serif;
+    background-color: var(--primary-dark);
+
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-width: 100vh;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+.header h1, .header p{
+    padding:0;
+    margin:0;
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    background-color: var(--secondary-dark);
+    color:var(--primary-light);
+    align-items: center;
+    justify-content: space-between;
+    padding:24px;
+}
+
+.mainBody{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+.rockDiv,.paperDiv,.scissorsDiv{
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    border: 2px solid var(--primary-light);
+    border-radius: 30px;
+    margin:20px;
+    align-items: center;
+    color: var(--primary-light);
+}
+
+.rockDiv p,.paperDiv p,.scissorsDiv p{
+    padding:0;
+    margin:0;
+}
+
+img{
+    width:256px;
+    height:fit-content;
+    margin-bottom: 8px;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex:1;
+    color:var(--primary-light);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-dark);
+    color: var(--primary-light);
+    padding:5px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+   /* padding-top: 100px;  Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-light);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 25px;
+    width: 60vw;
+  }
+  
+.modalButton{
+    border-radius: 10px;
+    margin-top:8px;
+    padding:10px 14px;
+    background-color: var(--secondary-dark);
+    color:var(--primary-light)
+}

@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Rock - Paper - Scissors</title>
-    <meta charset="UTF8"/>
-    <script src="./app.js"></script>
+    <meta charset="UTF8" />
+    <script src="./logic/app.js" defer></script>
+    <link rel="stylesheet" href="./style/app.css">
 </head>
+
 <body>
-    <h1>Use the console (for now)</h1>
+    <div class="content">
+        <div class="header">
+            <h1>Rock - Paper - Scissors</h1>
+            <p>Can you beat the Computer?</p>
+        </div>
+        <!-- The Modal -->
+        <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p class="modalText">Some text in the Modal..</p>
+                <div><button class="modalButton">Restart</button></div>
+            </div>
+
+        </div>
+        <div class="mainBody">
+            <div class="rockDiv">
+                <img src="./public/images/fist.png" />
+                <p>Rock</p>
+            </div>
+            <div class="paperDiv">
+                <img src="./public/images/hello.png" />
+                <p>Paper</p>
+            </div>
+            <div class="scissorsDiv">
+                <img src="./public/images/scissors.png" />
+                <p>Scissors</p>
+            </div>
+        </div>
+        <div class="result">
+            <p class="resultText">Who will win?</p>
+            <p class="resultScore">Current score is 0:0 in favor of no one</p>
+        </div>
+        <footer>Made with SPEED</footer>
+    </div>
 </body>
 
 
